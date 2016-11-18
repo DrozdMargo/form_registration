@@ -1,0 +1,47 @@
+
+    
+<div class="container-fluid login">
+      <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+
+      <div class="textintro">
+      <h1>Hi there!</h1>
+      <p>Log-in to access the awesomeness!</p>
+      <p>{{ }}</p>
+    </div>
+
+      <form action="" class="form-horizontal" name="myform" ng-submit= login() novalidate>
+        <div class="form-wrap">
+        <div class="input-group">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+          <input type="email" class="form-control"  placeholder="Email" ng-model="user.email">
+        </div>
+          <p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p> 
+
+        <div class="input-group">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+          <input type="password" class="form-control"  id="inputPassword" placeholder="Password" ng-model="user.password">
+        </div>
+        <p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Must be required</p>
+
+        <div class="input-group">
+        <div class="remember">
+          <label><input type="checkbox"  value="Remember">Remember me</label>
+          <button type="submit" class="btn btn-large btn-success" ng-disabled="myform.$invalid">Login</button>
+          <p>or <a ng-href="#/register">register</a></p>  
+        </div>
+        </div>
+
+
+        </div>
+      </form>
+    </div>
+      
+      <div class="col-md-4"></div>
+        
+      </div>
+</div>
+
+    
+  

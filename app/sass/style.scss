@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$coltext: #000;
+
+body,
+input,
+button,
+label,
+.textintro {
+	font-family: 'Roboto', sans-serif;
+}
+.login {
+	background-image: url("../img/banner_1.jpg");
+	width: 100%;
+	 background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+     height: 650px;
+}
+.form-wrap {
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,.85);
+}
+.form-horizontal {
+	margin: 50px auto;
+	background-color: rgba(0,0,0,.25);
+}
+.input-group {
+	padding: 10px 0;
+}
+.remember {
+	input[type=checkbox] {
+		margin: 10px 15px 0 0;
+		color: green;
+}
+	.btn {
+		padding: 6px 30px;
+		
+	}
+}
+
+.checkbox {
+	padding-right: 15px;
+}
+.gliphicon-user {
+	width:35px;
+	height:35px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #DA3637;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid #509D12;
+}
+
+.ng-invalid .btn {
+  background: gray;
+}
+
+.error {
+  color: red;
+  padding-bottom: 10px;
+}
+.textintro {
+	text-align: center;
+	color: $coltext;
+	font-weight: 500;
+	h1{
+		font-size: 35px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 0.8;
+	}
+}
+nav {
+	content: '';
+	display: block;
+	clear: both;
+	background-color: #cecece;
+.pull-right {
+	list-style: none;
+	li {
+		float: left;
+		padding: 10px 15px;
+	}
+	}
+	.pull-right {
+		font-size: 25px;
+		color: blue;
+		font-weight: 500;
+	}
+}
